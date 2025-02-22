@@ -8,11 +8,11 @@
 .app-container {
   width: 100%;
   min-height: 100vh;
-  background-color: #1a1a1a;  /* Dark background */
+  background-color: #1a1a1a;
   margin: 0;
   padding: 0;
-  overflow: hidden;  /* Prevents scrollbars */
-  position: absolute;  /* Takes up full viewport */
+  overflow: hidden;
+  position: fixed;  /* Change to fixed */
   top: 0;
   left: 0;
   right: 0;
@@ -31,7 +31,11 @@
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   font-family: 'Arial Black', sans-serif;
   letter-spacing: 1px;
-  box-sizing: border-box;  /* Includes padding in width calculation */
+  box-sizing: border-box;
+  position: fixed;  /* Change to fixed */
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .subtitle {
@@ -47,16 +51,34 @@
   letter-spacing: 2px;
   box-shadow: 0 2px 4px rgba(255,0,0,0.2);
   box-sizing: border-box;
+  position: fixed;  /* Change to fixed */
+  top: 80px;  /* Adjust based on title height */
+  left: 0;
+  z-index: 1000;
 }
 
-/* Remove unused styles */
-.logo,
-.card,
-.read-the-docs {
-  display: none;
+/* Make sure the map container fills all available space */
+.leaflet-container {
+  width: 100vw !important;
+  height: calc(100vh - 140px) !important;  /* Adjust based on headers total height */
+  margin: 0 !important;
+  padding: 0 !important;
+  position: fixed !important;  /* Change to fixed */
+  top: 140px !important;  /* Position below headers */
+  left: 0 !important;
+  z-index: 1;
 }
 
-/* Add hover effects */
+/* Remove any potential body/html margins */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* Keep your existing hover effects */
 .title:hover {
   background: linear-gradient(to right, #ff0000, #8b0000);
   transition: background 0.3s ease;
@@ -66,11 +88,4 @@
   color: #ffffff;
   background-color: #1a0000;
   transition: all 0.3s ease;
-}
-
-/* Make sure the map container takes full width */
-.leaflet-container {
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }

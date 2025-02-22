@@ -4,9 +4,8 @@ import "leaflet/dist/leaflet.css";
 import L from 'leaflet';
 import fireStations from '../assets/fireStations.json';
 import firestation from "../assets/images/firestation.png";
-import fireIcon from "../assets/images/fire.png";  // Add your fire icon image
+import fireIcon from "../assets/images/fire.png";
 
-// Keep your existing fire station icon
 const stationIcon = L.icon({
   iconUrl: firestation,
   iconSize: [30, 30],
@@ -15,49 +14,67 @@ const stationIcon = L.icon({
   shadowUrl: null
 });
 
-// Add new wildfire icon
-const wildfireIcon = L.icon({
-  iconUrl: fireIcon,  // Use a fire/flame icon image
-  iconSize: [35, 35],  // Slightly larger than station icons
-  iconAnchor: [17, 35],
-  popupAnchor: [0, -35],
-  shadowUrl: null
-});
-
 function AddMarkerOnClick() {
   const [markers, setMarkers] = useState([]);
+
+  const getFireIcon = (size) => L.icon({
+    iconUrl: fireIcon,
+    iconSize: [size, size],
+    iconAnchor: [size/2, size],
+    popupAnchor: [0, -size],
+    shadowUrl: null
+  });
 
   useMapEvents({
     click(e) {
       const newMarker = {
-        id: Date.now(),
+        id: markers.length + 1,
         position: [e.latlng.lat, e.latlng.lng],
+        size: 35  // Default size
       };
       setMarkers(current => [...current, newMarker]);
     }
   });
 
+  const updateMarkerSize = (markerId, newSize) => {
+    setMarkers(current =>
+      current.map(marker =>
+        marker.id === markerId ? { ...marker, size: newSize } : marker
+      )
+    );
+  };
+
   return markers.map(marker => (
     <Marker 
       key={marker.id}
       position={marker.position}
-      icon={wildfireIcon}  // Use the wildfire icon here
+      icon={getFireIcon(marker.size)}
       draggable={true}
-      eventHandlers={{
-        dragend: (e) => {
-          const marker = e.target;
-          const position = marker.getLatLng();
-          console.log('Fire Location:', [position.lat, position.lng]);
-        },
-      }}
     >
       <Popup>
-        Wildfire Location <br/>
-        {marker.position[0].toFixed(4)}, {marker.position[1].toFixed(4)}
+        <div>
+          Fire #{marker.id}<br/>
+          <input 
+            type="range" 
+            min="20" 
+            max="100" 
+            value={marker.size}
+            onChange={(e) => updateMarkerSize(marker.id, Number(e.target.value))}
+            style={{
+              width: "150px",
+              margin: "10px 0"
+            }}
+          />
+          <br/>
+          Size: {marker.size}px<br/>
+          {marker.position[0].toFixed(4)}, {marker.position[1].toFixed(4)}
+        </div>
       </Popup>
     </Marker>
   ));
 }
+
+// Rest of your LA_Map component stays the same...
 
 const LA_Map = () => {
   return (
