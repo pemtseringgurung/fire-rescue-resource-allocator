@@ -1,0 +1,139 @@
+.resource-controls {
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.resource-controls div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.resource-controls input {
+  width: 80px;
+  padding: 2px 5px;
+}
+
+.fire-resources {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.fire-resources h5 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.leaflet-popup-content {
+  width: 300px !important;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.station-popup {
+  padding: 5px;
+}
+
+.station-popup h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.station-popup p {
+  margin-bottom: 10px;
+}
+
+/* Add these new styles for the polyline popup */
+.dispatch-popup {
+  min-width: 200px;
+  padding: 5px;
+}
+
+.dispatch-popup h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.dispatch-popup .resource-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 3px 0;
+}
+
+.dispatch-popup .resource-value {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.optimize-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.optimize-button:hover {
+  background-color: #b71c1c;
+}
+
+.optimize-button:active {
+  transform: translateY(1px);
+}
+
+.intensity-slider {
+  margin: 10px 0;
+  padding: 5px 0;
+  border-top: 1px solid #eee;
+}
+
+.intensity-slider label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.intensity-slider span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.remove-fire-btn {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  margin-left: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.remove-fire-btn:hover {
+  background-color: #cc0000;
+}
+
+.remove-fire-btn:active {
+  transform: scale(0.95);
+} 
