@@ -1,12 +1,22 @@
 @import "leaflet/dist/leaflet.css";
-/* Ensure html and body take the full height */
-html, body, #root {
+/* ... existing code ... */
+
+/* Add grid pattern to the map */
+.leaflet-container {
+  position: relative;
+}
+
+.leaflet-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  margin: 0;  /* Remove default margin */
+  background-size: 50px 50px;
+  background-image:
+    linear-gradient(to right, rgba(224, 224, 224, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(224, 224, 224, 0.5) 1px, transparent 1px);
+  pointer-events: none;
+  z-index: 1000;
 }
-
-#root {
-  display: flex;
-  flex-direction: column;
-}
-
