@@ -1,0 +1,688 @@
+{
+    "stations": [
+      {
+        "id": 1,
+        "name": "Fire Station 1",
+        "position": [34.0567, -118.2379],
+        "description": "2230 Pasadena Ave"
+      },
+      {
+        "id": 2,
+        "name": "Fire Station 2",
+        "position": [34.0611, -118.2372],
+        "description": "1962 Cesar Chavez Ave"
+      },
+      {
+        "id": 3,
+        "name": "Fire Station 3",
+        "position": [34.0484, -118.2641],
+        "description": "108 N Fremont Ave"
+      },
+      {
+        "id": 4,
+        "name": "Fire Station 4",
+        "position": [34.0595, -118.2183],
+        "description": "450 E Temple St"
+      },
+      {
+        "id": 5,
+        "name": "Fire Station 5",
+        "position": [34.0985, -118.2925],
+        "description": "6621 W Manchester Ave"
+      },
+      {
+        "id": 6,
+        "name": "Fire Station 6",
+        "position": [33.9789, -118.3075],
+        "description": "326 N Virgil Ave"
+      },
+      {
+        "id": 7,
+        "name": "Fire Station 7",
+        "position": [34.0478, -118.2841],
+        "description": "14123 Nordhoff St"
+      },
+      {
+        "id": 8,
+        "name": "Fire Station 8",
+        "position": [34.0461, -118.2726],
+        "description": "2760 N Rowena Ave"
+      },
+      {
+        "id": 9,
+        "name": "Fire Station 9",
+        "position": [34.0443, -118.2477],
+        "description": "430 E 7th St"
+      },
+      {
+        "id": 10,
+        "name": "Fire Station 10",
+        "position": [34.0485, -118.2557],
+        "description": "1335 S Olive St"
+      },
+      {
+        "id": 11,
+        "name": "Fire Station 11",
+        "position": [34.0461, -118.2726],
+        "description": "1819 W 7th St"
+      },
+      {
+        "id": 12,
+        "name": "Fire Station 12",
+        "position": [34.0456, -118.3075],
+        "description": "5921 N Figueroa St"
+      },
+      {
+        "id": 13,
+        "name": "Fire Station 13",
+        "position": [34.0369, -118.2467],
+        "description": "2401 W Pico Blvd"
+      },
+      {
+        "id": 14,
+        "name": "Fire Station 14",
+        "position": [34.0478, -118.2841],
+        "description": "3401 S Central Ave"
+      },
+      {
+        "id": 15,
+        "name": "Fire Station 15",
+        "position": [34.0703, -118.2526],
+        "description": "915 W Jefferson Blvd"
+      },
+      {
+        "id": 16,
+        "name": "Fire Station 16",
+        "position": [34.0647, -118.2189],
+        "description": "2011 N Eastern Ave"
+      },
+      {
+        "id": 17,
+        "name": "Fire Station 17",
+        "position": [34.0485, -118.2557],
+        "description": "1601 S Santa Fe Ave"
+      },
+      {
+        "id": 18,
+        "name": "Fire Station 18",
+        "position": [34.0461, -118.2726],
+        "description": "12050 Balboa Blvd"
+      },
+      {
+        "id": 19,
+        "name": "Fire Station 19",
+        "position": [34.0369, -118.2467],
+        "description": "12229 Sunset Blvd"
+      },
+      {
+        "id": 20,
+        "name": "Fire Station 20",
+        "position": [34.0703, -118.2526],
+        "description": "2144 Sunset Blvd"
+      },
+      {
+        "id": 21,
+        "name": "Fire Station 21",
+        "position": [34.0647, -118.2189],
+        "description": "1192 E 51st St"
+      },
+      {
+        "id": 22,
+        "name": "Fire Station 22",
+        "position": [34.0985, -118.3233],
+        "description": "6912 S Normandie Ave"
+      },
+      {
+        "id": 23,
+        "name": "Fire Station 23",
+        "position": [34.0456, -118.2671],
+        "description": "17281 Sunset Blvd"
+      },
+      {
+        "id": 24,
+        "name": "Fire Station 24",
+        "position": [34.0233, -118.2914],
+        "description": "9411 Wentworth St"
+      },
+      {
+        "id": 25,
+        "name": "Fire Station 25",
+        "position": [34.0687, -118.3548],
+        "description": "2927 Whittier Blvd"
+      },
+      {
+        "id": 26,
+        "name": "Fire Station 26",
+        "position": [34.0897, -118.2925],
+        "description": "2009 S Western Ave"
+      },
+      {
+        "id": 27,
+        "name": "Fire Station 27",
+        "position": [34.0985, -118.3233],
+        "description": "1327 N Cole Ave"
+      },
+      {
+        "id": 28,
+        "name": "Fire Station 28",
+        "position": [34.0456, -118.3075],
+        "description": "11641 Corbin Ave"
+      },
+      {
+        "id": 29,
+        "name": "Fire Station 29",
+        "position": [34.0456, -118.2671],
+        "description": "4029 W Wilshire Blvd"
+      },
+      {
+        "id": 30,
+        "name": "Fire Station 30",
+        "position": [34.0233, -118.2914],
+        "description": "1401 S Central Ave"
+      },
+      {
+        "id": 31,
+        "name": "Fire Station 31",
+        "position": [34.0687, -118.3548],
+        "description": "7380 St Andrews Pl"
+      },
+      {
+        "id": 32,
+        "name": "Fire Station 32",
+        "position": [34.0897, -118.2925],
+        "description": "11351 Tampa Ave"
+      },
+      {
+        "id": 33,
+        "name": "Fire Station 33",
+        "position": [34.0985, -118.3233],
+        "description": "6406 S Main St"
+      },
+      {
+        "id": 34,
+        "name": "Fire Station 34",
+        "position": [34.0456, -118.3075],
+        "description": "3661 7th Ave"
+      },
+      {
+        "id": 35,
+        "name": "Fire Station 35",
+        "position": [34.0456, -118.2671],
+        "description": "1601 N Hillhurst Ave"
+      },
+      {
+        "id": 36,
+        "name": "Fire Station 36",
+        "position": [34.0233, -118.2914],
+        "description": "1005 N Gaffey St"
+      },
+      {
+        "id": 37,
+        "name": "Fire Station 37",
+        "position": [34.0687, -118.3548],
+        "description": "1090 Veteran Ave"
+      },
+      {
+        "id": 38,
+        "name": "Fire Station 38",
+        "position": [34.0897, -118.2925],
+        "description": "124 E I St"
+      },
+      {
+        "id": 39,
+        "name": "Fire Station 39",
+        "position": [34.0985, -118.3233],
+        "description": "14415 Sylvan St"
+      },
+      {
+        "id": 40,
+        "name": "Fire Station 40",
+        "position": [34.0456, -118.3075],
+        "description": "330 Ferry St"
+      },
+      {
+        "id": 41,
+        "name": "Fire Station 41",
+        "position": [34.0456, -118.2671],
+        "description": "1439 N Gardner St"
+      },
+      {
+        "id": 42,
+        "name": "Fire Station 42",
+        "position": [34.0233, -118.2914],
+        "description": "2021 Colorado Blvd"
+      },
+      {
+        "id": 43,
+        "name": "Fire Station 43",
+        "position": [34.0687, -118.3548],
+        "description": "3690 Motor Ave"
+      },
+      {
+        "id": 44,
+        "name": "Fire Station 44",
+        "position": [34.0897, -118.2925],
+        "description": "1410 Cypress Ave"
+      },
+      {
+        "id": 45,
+        "name": "Fire Station 45",
+        "position": [34.0985, -118.3233],
+        "description": "4370 S Hoover St"
+      },
+      {
+        "id": 46,
+        "name": "Fire Station 46",
+        "position": [34.0456, -118.3075],
+        "description": "4370 S Hoover St"
+      },
+      {
+        "id": 47,
+        "name": "Fire Station 47",
+        "position": [34.0456, -118.2671],
+        "description": "4575 Huntington Dr South"
+      },
+      {
+        "id": 48,
+        "name": "Fire Station 48",
+        "position": [34.0233, -118.2914],
+        "description": "1601 S Grand Ave"
+      },
+      {
+        "id": 49,
+        "name": "Fire Station 49",
+        "position": [34.0687, -118.3548],
+        "description": "400 Yacht Street"
+      },
+      {
+        "id": 50,
+        "name": "Fire Station 50",
+        "position": [34.0897, -118.2925],
+        "description": "3036 Fletcher Dr"
+      },
+      {
+        "id": 51,
+        "name": "Fire Station 51",
+        "position": [34.0985, -118.3233],
+        "description": "10435 Sepulveda Blvd"
+      },
+      {
+        "id": 52,
+        "name": "Fire Station 52",
+        "position": [34.0456, -118.3075],
+        "description": "4957 Melrose Ave"
+      },
+      {
+        "id": 53,
+        "name": "Fire Station 53",
+        "position": [34.0456, -118.2671],
+        "description": "438 N Mesa St"
+      },
+      {
+        "id": 54,
+        "name": "Fire Station 54",
+        "position": [34.0233, -118.2914],
+        "description": "5730 Crenshaw Blvd"
+      },
+      {
+        "id": 55,
+        "name": "Fire Station 55",
+        "position": [34.0687, -118.3548],
+        "description": "4455 E York Blvd"
+      },
+      {
+        "id": 56,
+        "name": "Fire Station 56",
+        "position": [34.0897, -118.2925],
+        "description": "2759 Rowena Ave"
+      },
+      {
+        "id": 57,
+        "name": "Fire Station 57",
+        "position": [34.0985, -118.3233],
+        "description": "7800 S Vermont Ave"
+      },
+      {
+        "id": 58,
+        "name": "Fire Station 58",
+        "position": [34.0456, -118.3075],
+        "description": "1556 S Robertson Blvd"
+      },
+      {
+        "id": 59,
+        "name": "Fire Station 59",
+        "position": [34.0456, -118.2671],
+        "description": "11505 Olympic Blvd"
+      },
+      {
+        "id": 60,
+        "name": "Fire Station 60",
+        "position": [34.0233, -118.2914],
+        "description": "5320 Tujunga Ave"
+      },
+      {
+        "id": 61,
+        "name": "Fire Station 61",
+        "position": [34.0687, -118.3548],
+        "description": "5821 W 3rd St"
+      },
+      {
+        "id": 62,
+        "name": "Fire Station 62",
+        "position": [34.0897, -118.2925],
+        "description": "11970 Venice Blvd"
+      },
+      {
+        "id": 63,
+        "name": "Fire Station 63",
+        "position": [34.0985, -118.3233],
+        "description": "1930 Shell Ave"
+      },
+      {
+        "id": 64,
+        "name": "Fire Station 64",
+        "position": [34.0456, -118.3075],
+        "description": "10811 S Main St"
+      },
+      {
+        "id": 65,
+        "name": "Fire Station 65",
+        "position": [34.0456, -118.2671],
+        "description": "1801 E Century Blvd"
+      },
+      {
+        "id": 66,
+        "name": "Fire Station 66",
+        "position": [34.0233, -118.2914],
+        "description": "1909 W Slauson Ave"
+      },
+      {
+        "id": 67,
+        "name": "Fire Station 67",
+        "position": [34.0687, -118.3548],
+        "description": "5451 Playa Vista Dr"
+      },
+      {
+        "id": 68,
+        "name": "Fire Station 68",
+        "position": [34.0897, -118.2925],
+        "description": "5023 W Washington Blvd"
+      },
+      {
+        "id": 69,
+        "name": "Fire Station 69",
+        "position": [34.0985, -118.3233],
+        "description": "15045 Sunset Blvd"
+      },
+      {
+        "id": 70,
+        "name": "Fire Station 70",
+        "position": [34.0456, -118.3075],
+        "description": "9861 Reseda Blvd"
+      },
+      {
+        "id": 71,
+        "name": "Fire Station 71",
+        "position": [34.0456, -118.2671],
+        "description": "107 S Beverly Glen Blvd"
+      },
+      {
+        "id": 72,
+        "name": "Fire Station 72",
+        "position": [34.0233, -118.2914],
+        "description": "6811 De Soto Ave"
+      },
+      {
+        "id": 73,
+        "name": "Fire Station 73",
+        "position": [34.0687, -118.3548],
+        "description": "7419 Reseda Blvd"
+      },
+      {
+        "id": 74,
+        "name": "Fire Station 74",
+        "position": [34.0897, -118.2925],
+        "description": "7777 Foothill Blvd"
+      },
+      {
+        "id": 75,
+        "name": "Fire Station 75",
+        "position": [34.0985, -118.3233],
+        "description": "15345 San Fernando Mission Blvd"
+      },
+      {
+        "id": 76,
+        "name": "Fire Station 76",
+        "position": [34.0456, -118.3075],
+        "description": "3111 N Cahuenga Blvd"
+      },
+      {
+        "id": 77,
+        "name": "Fire Station 77",
+        "position": [34.0456, -118.2671],
+        "description": "9224 Sunland Blvd"
+      },
+      {
+        "id": 78,
+        "name": "Fire Station 78",
+        "position": [34.0233, -118.2914],
+        "description": "4041 Whitsett Ave"
+      },
+      {
+        "id": 79,
+        "name": "Fire Station 79",
+        "position": [34.0687, -118.3548],
+        "description": "18030 S Vermont Ave"
+      },
+      {
+        "id": 80,
+        "name": "Fire Station 80",
+        "position": [34.0897, -118.2925],
+        "description": "6911 World Way West"
+      },
+      {
+        "id": 81,
+        "name": "Fire Station 81",
+        "position": [34.0985, -118.3233],
+        "description": "14355 Arminta St"
+      },
+      {
+        "id": 82,
+        "name": "Fire Station 82",
+        "position": [34.0456, -118.3075],
+        "description": "5769 Hollywood Blvd"
+      },
+      {
+        "id": 83,
+        "name": "Fire Station 83",
+        "position": [34.0456, -118.2671],
+        "description": "4960 Balboa Blvd"
+      },
+      {
+        "id": 84,
+        "name": "Fire Station 84",
+        "position": [34.0233, -118.2914],
+        "description": "21050 Burbank Blvd"
+      },
+      {
+        "id": 85,
+        "name": "Fire Station 85",
+        "position": [34.0687, -118.3548],
+        "description": "1331 W 253rd St"
+      },
+      {
+        "id": 86,
+        "name": "Fire Station 86",
+        "position": [34.0897, -118.2925],
+        "description": "4305 Vineland Ave"
+      },
+      {
+        "id": 87,
+        "name": "Fire Station 87",
+        "position": [34.0985, -118.3233],
+        "description": "10124 Balboa Blvd"
+      },
+      {
+        "id": 88,
+        "name": "Fire Station 88",
+        "position": [34.0456, -118.3075],
+        "description": "5101 N Sepulveda Blvd"
+      },
+      {
+        "id": 89,
+        "name": "Fire Station 89",
+        "position": [34.0456, -118.2671],
+        "description": "7063 Laurel Canyon Blvd"
+      },
+      {
+        "id": 90,
+        "name": "Fire Station 90",
+        "position": [34.0233, -118.2914],
+        "description": "7921 Woodley Ave"
+      },
+      {
+        "id": 91,
+        "name": "Fire Station 91",
+        "position": [34.0687, -118.3548],
+        "description": "14430 Polk St"
+      },
+      {
+        "id": 92,
+        "name": "Fire Station 92",
+        "position": [34.0897, -118.2925],
+        "description": "10556 W Pico Blvd"
+      },
+      {
+        "id": 93,
+        "name": "Fire Station 93",
+        "position": [34.0985, -118.3233],
+        "description": "19059 Ventura Blvd"
+      },
+      {
+        "id": 94,
+        "name": "Fire Station 94",
+        "position": [34.0456, -118.3075],
+        "description": "4470 Coliseum St"
+      },
+      {
+        "id": 95,
+        "name": "Fire Station 95",
+        "position": [34.0456, -118.2671],
+        "description": "10010 International Rd"
+      },
+      {
+        "id": 96,
+        "name": "Fire Station 96",
+        "position": [34.0233, -118.2914],
+        "description": "21800 Marilla St"
+      },
+      {
+        "id": 97,
+        "name": "Fire Station 97",
+        "position": [34.0687, -118.3548],
+        "description": "8021 Mulholland Dr"
+      },
+      {
+        "id": 98,
+        "name": "Fire Station 98",
+        "position": [34.0897, -118.2925],
+        "description": "13035 Van Nuys Blvd"
+      },
+      {
+        "id": 99,
+        "name": "Fire Station 99",
+        "position": [34.0985, -118.3233],
+        "description": "14145 Mulholland Dr"
+      },
+      {
+        "id": 100,
+        "name": "Fire Station 100",
+        "position": [34.0456, -118.3075],
+        "description": "6751 Louise Ave"
+      },
+      {
+        "id": 101,
+        "name": "Fire Station 101",
+        "position": [34.0456, -118.2671],
+        "description": "1414 W 25th St"
+      },
+      {
+        "id": 102,
+        "name": "Fire Station 102",
+        "position": [34.0233, -118.2914],
+        "description": "13200 Burbank Blvd"
+      },
+      {
+        "id": 103,
+        "name": "Fire Station 103",
+        "position": [34.0687, -118.3548],
+        "description": "18143 Parthenia St"
+      },
+      {
+        "id": 104,
+        "name": "Fire Station 104",
+        "position": [34.0897, -118.2925],
+        "description": "8349 Winnetka Ave"
+      },
+      {
+        "id": 105,
+        "name": "Fire Station 105",
+        "position": [34.0985, -118.3233],
+        "description": "6345 Fallbrook Ave"
+      },
+      {
+        "id": 106,
+        "name": "Fire Station 106",
+        "position": [34.0456, -118.3075],
+        "description": "23004 Roscoe Blvd"
+      },
+      {
+        "id": 107,
+        "name": "Fire Station 107",
+        "position": [34.0456, -118.2671],
+        "description": "20225 Devonshire St"
+      },
+      {
+        "id": 108,
+        "name": "Fire Station 108",
+        "position": [34.0233, -118.2914],
+        "description": "12520 Mulholland Dr"
+      },
+      {
+        "id": 109,
+        "name": "Fire Station 109",
+        "position": [34.0687, -118.3548],
+        "description": "16500 Mulholland Dr"
+      },
+      {
+        "id": 110,
+        "name": "Fire Station 110",
+        "position": [34.0897, -118.2925],
+        "description": "1909 W Slauson Ave"
+      },
+      {
+        "id": 111,
+        "name": "Fire Station 111",
+        "position": [34.0985, -118.3233],
+        "description": "1444 N Eastern Ave"
+      },
+      {
+        "id": 112,
+        "name": "Fire Station 112",
+        "position": [34.0456, -118.3075],
+        "description": "444 S Harbor Blvd"
+      },
+      {
+        "id": 113,
+        "name": "Fire Station 113",
+        "position": [34.0456, -118.2671],
+        "description": "2401 W Pico Blvd"
+      },
+      {
+        "id": 114,
+        "name": "Fire Station 114",
+        "position": [34.0233, -118.2914],
+        "description": "16617 Arminta St"
+      }
+    ]
+}
