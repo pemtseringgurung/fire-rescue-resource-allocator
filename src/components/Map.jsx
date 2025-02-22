@@ -105,8 +105,6 @@ const LA_Map = () => {
           </Popup>
         </Marker>
       ))}
-
-      {/* Add the click-to-add-fire functionality */}
       <AddMarkerOnClick />
     </MapContainer>
   );
