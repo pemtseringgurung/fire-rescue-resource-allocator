@@ -1,840 +1,1264 @@
 {
   "stations": [
-      {
-          "id": 1,
-          "name": "Fire Station 1",
-          "position": [34.0739, -118.2122],
-          "description": "2230 Pasadena Ave, Los Angeles, CA 90031",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 2,
-          "name": "Fire Station 2",
-          "position": [34.0403, -118.2170],
-          "description": "1962 Cesar Chavez Ave, Los Angeles, CA 90033",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 3,
-          "name": "Fire Station 3",
-          "position": [34.0643, -118.2745],
-          "description": "108 N Fremont Ave, Los Angeles, CA 90012",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 4,
-          "name": "Fire Station 4",
-          "position": [34.0523, -118.2397],
-          "description": "450 E Temple St, Los Angeles, CA 90012",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 5,
-          "name": "Fire Station 5",
-          "position": [33.9619, -118.2744],
-          "description": "8900 S Emerson Ave, Los Angeles, CA 90045",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 6,
-          "name": "Fire Station 6",
-          "position": [34.0839, -118.2871],
-          "description": "326 N Virgil Ave, Los Angeles, CA 90004",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 7,
-          "name": "Fire Station 7",
-          "position": [34.2355, -118.4419],
-          "description": "14123 Nordhoff St, Los Angeles, CA 91402",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 8,
-          "name": "Fire Station 8",
-          "position": [34.1139, -118.2607],
-          "description": "2760 N Rowena Ave, Los Angeles, CA 90039",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 9,
-          "name": "Fire Station 9",
-          "position": [34.0445, -118.2475],
-          "description": "430 E 7th St, Los Angeles, CA 90014",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 10,
-          "name": "Fire Station 10",
-          "position": [34.0460, -118.2612],
-          "description": "1335 S Olive St, Los Angeles, CA 90015",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 11,
-          "name": "Fire Station 11",
-          "position": [34.0531, -118.2762],
-          "description": "1819 W 7th St, Los Angeles, CA 90057",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 12,
-          "name": "Fire Station 12",
-          "position": [34.1103, -118.2003],
-          "description": "5921 N Figueroa St, Los Angeles, CA 90042",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 13,
-          "name": "Fire Station 13",
-          "position": [34.0474, -118.2808],
-          "description": "2401 W Pico Blvd, Los Angeles, CA 90006",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 14,
-          "name": "Fire Station 14",
-          "position": [34.0168, -118.2724],
-          "description": "3401 S Central Ave, Los Angeles, CA 90011",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 15,
-          "name": "Fire Station 15",
-          "position": [34.0277, -118.2850],
-          "description": "915 W Jefferson Blvd, Los Angeles, CA 90007",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 16,
-          "name": "Fire Station 16",
-          "position": [34.0570, -118.1953],
-          "description": "2011 N Eastern Ave, Los Angeles, CA 90032",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 17,
-          "name": "Fire Station 17",
-          "position": [34.0257, -118.2307],
-          "description": "1601 S Santa Fe Ave, Los Angeles, CA 90021",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 18,
-          "name": "Fire Station 18",
-          "position": [34.2722, -118.5012],
-          "description": "12050 Balboa Blvd, Granada Hills, CA 91344",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 19,
-          "name": "Fire Station 19",
-          "position": [34.0977, -118.4801],
-          "description": "12229 Sunset Blvd, Los Angeles, CA 90049",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 20,
-          "name": "Fire Station 20",
-          "position": [34.0777, -118.2617],
-          "description": "2144 Sunset Blvd, Los Angeles, CA 90026",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 21,
-          "name": "Fire Station 21",
-          "position": [33.9967, -118.2614],
-          "description": "1192 E 51st St, Los Angeles, CA 90011",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 22,
-          "name": "Fire Station 22",
-          "position": [33.9760, -118.3008],
-          "description": "6912 S Normandie Ave, Los Angeles, CA 90044",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 23,
-          "name": "Fire Station 23",
-          "position": [34.0504, -118.2427],
-          "description": "225 E 5th St, Los Angeles, CA 90013",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 24,
-          "name": "Fire Station 24",
-          "position": [34.2439, -118.3981],
-          "description": "9411 Wentworth St, Sunland-Tujunga, CA 91040",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 25,
-          "name": "Fire Station 25",
-          "position": [34.0333, -118.2181],
-          "description": "2927 Whittier Blvd, Los Angeles, CA 90023",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 26,
-          "name": "Fire Station 26",
-          "position": [34.0383, -118.3089],
-          "description": "2009 S Western Ave, Los Angeles, CA 90018",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 27,
-          "name": "Fire Station 27",
-          "position": [34.0956, -118.3285],
-          "description": "1327 N Cole Ave, Los Angeles, CA 90028",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 28,
-          "name": "Fire Station 28",
-          "position": [34.2327, -118.5594],
-          "description": "11641 Corbin Ave, Porter Ranch, CA 91326",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 29,
-          "name": "Fire Station 29",
-          "position": [34.0620, -118.3106],
-          "description": "4029 W Wilshire Blvd, Los Angeles, CA 90010",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 30,
-          "name": "Fire Station 30",
-          "position": [34.0238, -118.2478],
-          "description": "1401 S Central Ave, Los Angeles, CA 90021",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 31,
-          "name": "Fire Station 31",
-          "position": [33.9749, -118.3086],
-          "description": "7380 St Andrews Pl, Los Angeles, CA 90047",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 32,
-          "name": "Fire Station 32",
-          "position": [34.2612, -118.5307],
-          "description": "11351 Tampa Ave, Porter Ranch, CA 91326",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 33,
-          "name": "Fire Station 33",
-          "position": [33.9802, -118.2741],
-          "description": "6406 S Main St, Los Angeles, CA 90003",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 34,
-          "name": "Fire Station 34",
-          "position": [34.0180, -118.3347],
-          "description": "3661 7th Ave, Los Angeles, CA 90018",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 35,
-          "name": "Fire Station 35",
-          "position": [34.1044, -118.2871],
-          "description": "1601 N Hillhurst Ave, Los Angeles, CA 90027",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 36,
-          "name": "Fire Station 36",
-          "position": [33.7404, -118.2917],
-          "description": "1005 N Gaffey St, San Pedro, CA 90731",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 37,
-          "name": "Fire Station 37",
-          "position": [34.0628, -118.4467],
-          "description": "1090 Veteran Ave, Los Angeles, CA 90024",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 38,
-          "name": "Fire Station 38",
-          "position": [33.7071, -118.2728],
-          "description": "124 E I St, Wilmington, CA 90744",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 39,
-          "name": "Fire Station 39",
-          "position": [34.1786, -118.4477],
-          "description": "14415 Sylvan St, Van Nuys, CA 91401",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 40,
-          "name": "Fire Station 40",
-          "position": [33.7446, -118.2611],
-          "description": "330 Ferry St, Terminal Island, CA 90731",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 41,
-          "name": "Fire Station 41",
-          "position": [34.0836, -118.3502],
-          "description": "1439 N Gardner St, Los Angeles, CA 90046",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 42,
-          "name": "Fire Station 42",
-          "position": [34.1394, -118.2062],
-          "description": "2021 Colorado Blvd, Los Angeles, CA 90041",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 43,
-          "name": "Fire Station 43",
-          "position": [34.0258, -118.4112],
-          "description": "3690 Motor Ave, Los Angeles, CA 90034",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 44,
-          "name": "Fire Station 44",
-          "position": [34.0887, -118.2710],
-          "description": "1410 Cypress Ave, Los Angeles, CA 90065",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 45,
-          "name": "Fire Station 45",
-          "position": [34.0108, -118.2873],
-          "description": "4370 S Hoover St, Los Angeles, CA 90037",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 46,
-          "name": "Fire Station 46",
-          "position": [34.0903, -118.2918],
-          "description": "4370 Maywood Ave, Los Angeles, CA 90041",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 47,
-          "name": "Fire Station 47",
-          "position": [34.0851, -118.1831],
-          "description": "4575 Huntington Dr South, Los Angeles, CA 90032",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 48,
-          "name": "Fire Station 48",
-          "position": [34.0369, -118.2668],
-          "description": "1601 S Grand Ave, Los Angeles, CA 90015",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 49,
-          "name": "Fire Station 49",
-          "position": [33.7207, -118.2780],
-          "description": "400 Yacht St, Wilmington, CA 90744",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 50,
-          "name": "Fire Station 50",
-          "position": [34.1156, -118.2705],
-          "description": "3036 Fletcher Dr, Los Angeles, CA 90065",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 51,
-          "name": "Fire Station 51",
-          "position": [34.2477, -118.4686],
-          "description": "10435 Sepulveda Blvd, Mission Hills, CA 91345",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 52,
-          "name": "Fire Station 52",
-          "position": [34.0833, -118.3361],
-          "description": "4957 Melrose Ave, Los Angeles, CA 90029",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 53,
-          "name": "Fire Station 53",
-          "position": [33.7358, -118.2847],
-          "description": "438 N Mesa St, San Pedro, CA 90731",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 54,
-          "name": "Fire Station 54",
-          "position": [33.9889, -118.3308],
-          "description": "5730 Crenshaw Blvd, Los Angeles, CA 90043",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 55,
-          "name": "Fire Station 55",
-          "position": [34.1234, -118.1947],
-          "description": "4455 York Blvd, Los Angeles, CA 90041",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 56,
-          "name": "Fire Station 56",
-          "position": [34.1139, -118.2607],
-          "description": "2759 Rowena Ave, Los Angeles, CA 90039",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 57,
-          "name": "Fire Station 57",
-          "position": [33.9662, -118.2929],
-          "description": "7800 S Vermont Ave, Los Angeles, CA 90044",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 58,
-          "name": "Fire Station 58",
-          "position": [34.0534, -118.3838],
-          "description": "1556 S Robertson Blvd, Los Angeles, CA 90035",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 59,
-          "name": "Fire Station 59",
-          "position": [34.0362, -118.4359],
-          "description": "11505 Olympic Blvd, Los Angeles, CA 90064",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 60,
-          "name": "Fire Station 60",
-          "position": [34.1680, -118.3768],
-          "description": "5320 Tujunga Ave, North Hollywood, CA 91601",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-          "id": 61,
-          "name": "Fire Station 61",
-          "position": [34.0705, -118.3574],
-          "description": "5821 W 3rd St, Los Angeles, CA 90036",
-          "resources": {
-            "firefighters": 10,
-            "water": 10,
-            "firetrucks": 2
-          }
-      },
-      {
-        "id": 61,
-        "name": "Fire Station 61",
-        "position": [34.0705, -118.3574],
-        "description": "5821 W 3rd St, Los Angeles, CA 90036",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+    {
+      "id": 1,
+      "name": "Fire Station 1",
+      "position": [
+        34.0739,
+        -118.2122
+      ],
+      "description": "2230 Pasadena Ave, Los Angeles, CA 90031",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 62,
-        "name": "Fire Station 62",
-        "position": [34.0486, -118.4414],
-        "description": "11970 Venice Blvd, Los Angeles, CA 90066",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 2,
+      "name": "Fire Station 2",
+      "position": [
+        34.0403,
+        -118.217
+      ],
+      "description": "1962 Cesar Chavez Ave, Los Angeles, CA 90033",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 63,
-        "name": "Fire Station 63",
-        "position": [34.0405, -118.4289],
-        "description": "1930 Shell Ave, Venice, CA 90291",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 3,
+      "name": "Fire Station 3",
+      "position": [
+        34.0643,
+        -118.2745
+      ],
+      "description": "108 N Fremont Ave, Los Angeles, CA 90012",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 64,
-        "name": "Fire Station 64",
-        "position": [34.0308, -118.3914],
-        "description": "10811 S Main St, Los Angeles, CA 90061",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 4,
+      "name": "Fire Station 4",
+      "position": [
+        34.0523,
+        -118.2397
+      ],
+      "description": "450 E Temple St, Los Angeles, CA 90012",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 65,
-        "name": "Fire Station 65",
-        "position": [33.9543, -118.3079],
-        "description": "1801 E Century Blvd, Los Angeles, CA 90002",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 5,
+      "name": "Fire Station 5",
+      "position": [
+        33.9619,
+        -118.2744
+      ],
+      "description": "8900 S Emerson Ave, Los Angeles, CA 90045",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 66,
-        "name": "Fire Station 66",
-        "position": [34.2275, -118.3697],
-        "description": "1909 W Slauson Ave, Los Angeles, CA 90047",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 6,
+      "name": "Fire Station 6",
+      "position": [
+        34.0839,
+        -118.2871
+      ],
+      "description": "326 N Virgil Ave, Los Angeles, CA 90004",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 67,
-        "name": "Fire Station 67",
-        "position": [34.1824, -118.3589],
-        "description": "5451 Platt Ave, Woodland Hills, CA 91367",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 7,
+      "name": "Fire Station 7",
+      "position": [
+        34.2355,
+        -118.4419
+      ],
+      "description": "14123 Nordhoff St, Los Angeles, CA 91402",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 68,
-        "name": "Fire Station 68",
-        "position": [34.0914, -118.4160],
-        "description": "5023 W Washington Blvd, Los Angeles, CA 90016",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 8,
+      "name": "Fire Station 8",
+      "position": [
+        34.1139,
+        -118.2607
+      ],
+      "description": "2760 N Rowena Ave, Los Angeles, CA 90039",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 69,
-        "name": "Fire Station 69",
-        "position": [34.0377, -118.4397],
-        "description": "15045 Sunset Blvd, Pacific Palisades, CA 90272",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 9,
+      "name": "Fire Station 9",
+      "position": [
+        34.0445,
+        -118.2475
+      ],
+      "description": "430 E 7th St, Los Angeles, CA 90014",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 70,
-        "name": "Fire Station 70",
-        "position": [34.0200, -118.3308],
-        "description": "9861 Reseda Blvd, Northridge, CA 91324",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 10,
+      "name": "Fire Station 10",
+      "position": [
+        34.046,
+        -118.2612
+      ],
+      "description": "1335 S Olive St, Los Angeles, CA 90015",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 71,
-        "name": "Fire Station 71",
-        "position": [34.0377, -118.4397],
-        "description": "107 S Beverly Glen Blvd, Los Angeles, CA 90024",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 11,
+      "name": "Fire Station 11",
+      "position": [
+        34.0531,
+        -118.2762
+      ],
+      "description": "1819 W 7th St, Los Angeles, CA 90057",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 72,
-        "name": "Fire Station 72",
-        "position": [34.2349, -118.5370],
-        "description": "6811 De Soto Ave, Canoga Park, CA 91303",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 12,
+      "name": "Fire Station 12",
+      "position": [
+        34.1103,
+        -118.2003
+      ],
+      "description": "5921 N Figueroa St, Los Angeles, CA 90042",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 73,
-        "name": "Fire Station 73",
-        "position": [34.1857, -118.5482],
-        "description": "7419 Reseda Blvd, Reseda, CA 91335",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 13,
+      "name": "Fire Station 13",
+      "position": [
+        34.0474,
+        -118.2808
+      ],
+      "description": "2401 W Pico Blvd, Los Angeles, CA 90006",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 74,
-        "name": "Fire Station 74",
-        "position": [34.1690, -118.5986],
-        "description": "7777 Foothill Blvd, Tujunga, CA 91042",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 14,
+      "name": "Fire Station 14",
+      "position": [
+        34.0168,
+        -118.2724
+      ],
+      "description": "3401 S Central Ave, Los Angeles, CA 90011",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     },
     {
-        "id": 75,
-        "name": "Fire Station 75",
-        "position": [34.2349, -118.5370],
-        "description": "15345 San Fernando Mission Blvd, Mission Hills, CA 91345",
-        "resources": {
-          "firefighters": 10,
-          "water": 10,
-          "firetrucks": 2
-        }
+      "id": 15,
+      "name": "Fire Station 15",
+      "position": [
+        34.0277,
+        -118.285
+      ],
+      "description": "915 W Jefferson Blvd, Los Angeles, CA 90007",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 16,
+      "name": "Fire Station 16",
+      "position": [
+        34.057,
+        -118.1953
+      ],
+      "description": "2011 N Eastern Ave, Los Angeles, CA 90032",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 17,
+      "name": "Fire Station 17",
+      "position": [
+        34.0257,
+        -118.2307
+      ],
+      "description": "1601 S Santa Fe Ave, Los Angeles, CA 90021",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 18,
+      "name": "Fire Station 18",
+      "position": [
+        34.2722,
+        -118.5012
+      ],
+      "description": "12050 Balboa Blvd, Granada Hills, CA 91344",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 19,
+      "name": "Fire Station 19",
+      "position": [
+        34.0977,
+        -118.4801
+      ],
+      "description": "12229 Sunset Blvd, Los Angeles, CA 90049",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 20,
+      "name": "Fire Station 20",
+      "position": [
+        34.0777,
+        -118.2617
+      ],
+      "description": "2144 Sunset Blvd, Los Angeles, CA 90026",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 21,
+      "name": "Fire Station 21",
+      "position": [
+        33.9967,
+        -118.2614
+      ],
+      "description": "1192 E 51st St, Los Angeles, CA 90011",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 22,
+      "name": "Fire Station 22",
+      "position": [
+        33.976,
+        -118.3008
+      ],
+      "description": "6912 S Normandie Ave, Los Angeles, CA 90044",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 23,
+      "name": "Fire Station 23",
+      "position": [
+        34.0504,
+        -118.2427
+      ],
+      "description": "225 E 5th St, Los Angeles, CA 90013",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 24,
+      "name": "Fire Station 24",
+      "position": [
+        34.2439,
+        -118.3981
+      ],
+      "description": "9411 Wentworth St, Sunland-Tujunga, CA 91040",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 25,
+      "name": "Fire Station 25",
+      "position": [
+        34.0333,
+        -118.2181
+      ],
+      "description": "2927 Whittier Blvd, Los Angeles, CA 90023",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 26,
+      "name": "Fire Station 26",
+      "position": [
+        34.0383,
+        -118.3089
+      ],
+      "description": "2009 S Western Ave, Los Angeles, CA 90018",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 27,
+      "name": "Fire Station 27",
+      "position": [
+        34.0956,
+        -118.3285
+      ],
+      "description": "1327 N Cole Ave, Los Angeles, CA 90028",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 28,
+      "name": "Fire Station 28",
+      "position": [
+        34.2327,
+        -118.5594
+      ],
+      "description": "11641 Corbin Ave, Porter Ranch, CA 91326",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 29,
+      "name": "Fire Station 29",
+      "position": [
+        34.062,
+        -118.3106
+      ],
+      "description": "4029 W Wilshire Blvd, Los Angeles, CA 90010",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 30,
+      "name": "Fire Station 30",
+      "position": [
+        34.0238,
+        -118.2478
+      ],
+      "description": "1401 S Central Ave, Los Angeles, CA 90021",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 31,
+      "name": "Fire Station 31",
+      "position": [
+        33.9749,
+        -118.3086
+      ],
+      "description": "7380 St Andrews Pl, Los Angeles, CA 90047",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 32,
+      "name": "Fire Station 32",
+      "position": [
+        34.2612,
+        -118.5307
+      ],
+      "description": "11351 Tampa Ave, Porter Ranch, CA 91326",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 33,
+      "name": "Fire Station 33",
+      "position": [
+        33.9802,
+        -118.2741
+      ],
+      "description": "6406 S Main St, Los Angeles, CA 90003",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 34,
+      "name": "Fire Station 34",
+      "position": [
+        34.018,
+        -118.3347
+      ],
+      "description": "3661 7th Ave, Los Angeles, CA 90018",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 35,
+      "name": "Fire Station 35",
+      "position": [
+        34.1044,
+        -118.2871
+      ],
+      "description": "1601 N Hillhurst Ave, Los Angeles, CA 90027",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 36,
+      "name": "Fire Station 36",
+      "position": [
+        33.7404,
+        -118.2917
+      ],
+      "description": "1005 N Gaffey St, San Pedro, CA 90731",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 37,
+      "name": "Fire Station 37",
+      "position": [
+        34.0628,
+        -118.4467
+      ],
+      "description": "1090 Veteran Ave, Los Angeles, CA 90024",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 38,
+      "name": "Fire Station 38",
+      "position": [
+        33.7071,
+        -118.2728
+      ],
+      "description": "124 E I St, Wilmington, CA 90744",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 39,
+      "name": "Fire Station 39",
+      "position": [
+        34.1786,
+        -118.4477
+      ],
+      "description": "14415 Sylvan St, Van Nuys, CA 91401",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 40,
+      "name": "Fire Station 40",
+      "position": [
+        33.7446,
+        -118.2611
+      ],
+      "description": "330 Ferry St, Terminal Island, CA 90731",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 41,
+      "name": "Fire Station 41",
+      "position": [
+        34.0836,
+        -118.3502
+      ],
+      "description": "1439 N Gardner St, Los Angeles, CA 90046",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 42,
+      "name": "Fire Station 42",
+      "position": [
+        34.1394,
+        -118.2062
+      ],
+      "description": "2021 Colorado Blvd, Los Angeles, CA 90041",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 43,
+      "name": "Fire Station 43",
+      "position": [
+        34.0258,
+        -118.4112
+      ],
+      "description": "3690 Motor Ave, Los Angeles, CA 90034",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 44,
+      "name": "Fire Station 44",
+      "position": [
+        34.0887,
+        -118.271
+      ],
+      "description": "1410 Cypress Ave, Los Angeles, CA 90065",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 45,
+      "name": "Fire Station 45",
+      "position": [
+        34.0108,
+        -118.2873
+      ],
+      "description": "4370 S Hoover St, Los Angeles, CA 90037",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 46,
+      "name": "Fire Station 46",
+      "position": [
+        34.0903,
+        -118.2918
+      ],
+      "description": "4370 Maywood Ave, Los Angeles, CA 90041",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 47,
+      "name": "Fire Station 47",
+      "position": [
+        34.0851,
+        -118.1831
+      ],
+      "description": "4575 Huntington Dr South, Los Angeles, CA 90032",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 48,
+      "name": "Fire Station 48",
+      "position": [
+        34.0369,
+        -118.2668
+      ],
+      "description": "1601 S Grand Ave, Los Angeles, CA 90015",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 49,
+      "name": "Fire Station 49",
+      "position": [
+        33.7207,
+        -118.278
+      ],
+      "description": "400 Yacht St, Wilmington, CA 90744",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 50,
+      "name": "Fire Station 50",
+      "position": [
+        34.1156,
+        -118.2705
+      ],
+      "description": "3036 Fletcher Dr, Los Angeles, CA 90065",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 51,
+      "name": "Fire Station 51",
+      "position": [
+        34.2477,
+        -118.4686
+      ],
+      "description": "10435 Sepulveda Blvd, Mission Hills, CA 91345",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 52,
+      "name": "Fire Station 52",
+      "position": [
+        34.0833,
+        -118.3361
+      ],
+      "description": "4957 Melrose Ave, Los Angeles, CA 90029",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 53,
+      "name": "Fire Station 53",
+      "position": [
+        33.7358,
+        -118.2847
+      ],
+      "description": "438 N Mesa St, San Pedro, CA 90731",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 54,
+      "name": "Fire Station 54",
+      "position": [
+        33.9889,
+        -118.3308
+      ],
+      "description": "5730 Crenshaw Blvd, Los Angeles, CA 90043",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 55,
+      "name": "Fire Station 55",
+      "position": [
+        34.1234,
+        -118.1947
+      ],
+      "description": "4455 York Blvd, Los Angeles, CA 90041",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 56,
+      "name": "Fire Station 56",
+      "position": [
+        34.1139,
+        -118.2607
+      ],
+      "description": "2759 Rowena Ave, Los Angeles, CA 90039",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 57,
+      "name": "Fire Station 57",
+      "position": [
+        33.9662,
+        -118.2929
+      ],
+      "description": "7800 S Vermont Ave, Los Angeles, CA 90044",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 58,
+      "name": "Fire Station 58",
+      "position": [
+        34.0534,
+        -118.3838
+      ],
+      "description": "1556 S Robertson Blvd, Los Angeles, CA 90035",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 59,
+      "name": "Fire Station 59",
+      "position": [
+        34.0362,
+        -118.4359
+      ],
+      "description": "11505 Olympic Blvd, Los Angeles, CA 90064",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 60,
+      "name": "Fire Station 60",
+      "position": [
+        34.168,
+        -118.3768
+      ],
+      "description": "5320 Tujunga Ave, North Hollywood, CA 91601",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 61,
+      "name": "Fire Station 61",
+      "position": [
+        34.0705,
+        -118.3574
+      ],
+      "description": "5821 W 3rd St, Los Angeles, CA 90036",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 61,
+      "name": "Fire Station 61",
+      "position": [
+        34.0705,
+        -118.3574
+      ],
+      "description": "5821 W 3rd St, Los Angeles, CA 90036",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 62,
+      "name": "Fire Station 62",
+      "position": [
+        34.0486,
+        -118.4414
+      ],
+      "description": "11970 Venice Blvd, Los Angeles, CA 90066",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 63,
+      "name": "Fire Station 63",
+      "position": [
+        34.0405,
+        -118.4289
+      ],
+      "description": "1930 Shell Ave, Venice, CA 90291",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 64,
+      "name": "Fire Station 64",
+      "position": [
+        34.0308,
+        -118.3914
+      ],
+      "description": "10811 S Main St, Los Angeles, CA 90061",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 65,
+      "name": "Fire Station 65",
+      "position": [
+        33.9543,
+        -118.3079
+      ],
+      "description": "1801 E Century Blvd, Los Angeles, CA 90002",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 66,
+      "name": "Fire Station 66",
+      "position": [
+        34.2275,
+        -118.3697
+      ],
+      "description": "1909 W Slauson Ave, Los Angeles, CA 90047",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 67,
+      "name": "Fire Station 67",
+      "position": [
+        34.1824,
+        -118.3589
+      ],
+      "description": "5451 Platt Ave, Woodland Hills, CA 91367",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 68,
+      "name": "Fire Station 68",
+      "position": [
+        34.0914,
+        -118.416
+      ],
+      "description": "5023 W Washington Blvd, Los Angeles, CA 90016",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 69,
+      "name": "Fire Station 69",
+      "position": [
+        34.0377,
+        -118.4397
+      ],
+      "description": "15045 Sunset Blvd, Pacific Palisades, CA 90272",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 70,
+      "name": "Fire Station 70",
+      "position": [
+        34.02,
+        -118.3308
+      ],
+      "description": "9861 Reseda Blvd, Northridge, CA 91324",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 71,
+      "name": "Fire Station 71",
+      "position": [
+        34.0377,
+        -118.4397
+      ],
+      "description": "107 S Beverly Glen Blvd, Los Angeles, CA 90024",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 72,
+      "name": "Fire Station 72",
+      "position": [
+        34.2349,
+        -118.537
+      ],
+      "description": "6811 De Soto Ave, Canoga Park, CA 91303",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 73,
+      "name": "Fire Station 73",
+      "position": [
+        34.1857,
+        -118.5482
+      ],
+      "description": "7419 Reseda Blvd, Reseda, CA 91335",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 74,
+      "name": "Fire Station 74",
+      "position": [
+        34.169,
+        -118.5986
+      ],
+      "description": "7777 Foothill Blvd, Tujunga, CA 91042",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 75,
+      "name": "Fire Station 75",
+      "position": [
+        34.2349,
+        -118.537
+      ],
+      "description": "15345 San Fernando Mission Blvd, Mission Hills, CA 91345",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 100,
+      "name": "Fire Station 100",
+      "position": [
+        34.1865,
+        -118.5172
+      ],
+      "description": "6751 Louise Avenue, West Van Nuys / Lake Balboa",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 101,
+      "name": "Fire Station 101",
+      "position": [
+        33.7292,
+        -118.3171
+      ],
+      "description": "1414 25th Street, San Pedro South Shores",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 102,
+      "name": "Fire Station 102",
+      "position": [
+        34.1726,
+        -118.4393
+      ],
+      "description": "13200 Burbank Boulevard, South Van Nuys / Valley Glen",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 103,
+      "name": "Fire Station 103",
+      "position": [
+        34.236,
+        -118.5304
+      ],
+      "description": "18143 Parthenia Street, Northridge / CSUN",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 104,
+      "name": "Fire Station 104",
+      "position": [
+        34.2042,
+        -118.5737
+      ],
+      "description": "8349 Winnetka Avenue, Winnetka",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 105,
+      "name": "Fire Station 105",
+      "position": [
+        34.1904,
+        -118.6134
+      ],
+      "description": "6345 Fallbrook Avenue, Woodland Hills",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 106,
+      "name": "Fire Station 106",
+      "position": [
+        34.2214,
+        -118.6392
+      ],
+      "description": "23004 Roscoe Boulevard, West Hills",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 107,
+      "name": "Fire Station 107",
+      "position": [
+        34.2561,
+        -118.6021
+      ],
+      "description": "20225 Devonshire Street, Chatsworth",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 108,
+      "name": "Fire Station 108",
+      "position": [
+        34.1347,
+        -118.4233
+      ],
+      "description": "12520 Mulholland Drive, Franklin Canyon",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 109,
+      "name": "Fire Station 109",
+      "position": [
+        34.1486,
+        -118.4871
+      ],
+      "description": "16500 Mulholland Drive, Encino Hills",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 110,
+      "name": "Fire Station 110",
+      "position": [
+        33.7142,
+        -118.2895
+      ],
+      "description": "2945 Miner Street, Berth 44-A, Fort MacArthur Area",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 111,
+      "name": "Fire Station 111",
+      "position": [
+        33.7221,
+        -118.2733
+      ],
+      "description": "954 South Seaside Avenue, Berth 260, Fish Harbor",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 112,
+      "name": "Fire Station 112",
+      "position": [
+        33.7315,
+        -118.2756
+      ],
+      "description": "444 South Harbor Boulevard, Berth 86, Ports O' Call / Cruise Terminal",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
+    },
+    {
+      "id": 114,
+      "name": "Fire Station 114",
+      "position": [
+        34.215,
+        -118.4941
+      ],
+      "description": "16617 Arminta Street, Air Operations / Crash Rescue",
+      "resources": {
+        "firefighters": 10,
+        "water": 10,
+        "firetrucks": 2
+      }
     }
-    ]
-    }
+  ]
+}
