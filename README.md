@@ -40,7 +40,7 @@ An advanced emergency response mapping system designed to help visualize and man
 - CSS Modules for styling
 
 ## Project Structure
-
+```
 fire-rescue-resource-allocator/
 ├── src/
 │   ├── assets/
@@ -68,7 +68,7 @@ fire-rescue-resource-allocator/
 ├── README.md
 ├── package.json
 └── vite.config.js
-
+```
 ## Core Components
 
 ### Map Component (Map.jsx)
@@ -199,9 +199,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - Saidamir
 - Suraj
 - Yajas
-
-## License
-MIT License - See LICENSE file for details
 
 ## Future Enhancements
 - Real-time data integration
