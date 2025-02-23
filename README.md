@@ -43,29 +43,31 @@ An advanced emergency response mapping system designed to help visualize and man
 
 fire-rescue-resource-allocator/
 ├── src/
-│ ├── assets/
-│ │ ├── images/
-│ │ │ ├── firestation.png
-│ │ │ ├── fire.png
-│ │ │ └── team/
-│ │ │ ├── pem.png
-│ │ │ ├── saidamir.png
-│ │ │ ├── suraj.png
-│ │ │ └── yajas.png
-│ │ └── fireStations.json
-│ ├── components/
-│ │ ├── Map.jsx
-│ │ ├── Header.jsx
-│ │ └── About.jsx
-│ ├── utils/
-│ │ └── resourceOptimizer.js
-│ ├── styling/
-│ │ ├── Map.css
-│ │ ├── About.css
-│ │ └── Header.css
-│ ├── App.jsx
-│ └── App.css
-└── README.md
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── firestation.png
+│   │   │   ├── fire.png
+│   │   │   └── team/
+│   │   │       ├── pem.png
+│   │   │       ├── saidamir.png
+│   │   │       ├── suraj.png
+│   │   │       └── yajas.png
+│   │   └── fireStations.json
+│   ├── components/
+│   │   ├── Map.jsx
+│   │   ├── Header.jsx
+│   │   └── About.jsx
+│   ├── utils/
+│   │   └── resourceOptimizer.js
+│   ├── styling/
+│   │   ├── Map.css
+│   │   ├── About.css
+│   │   └── Header.css
+│   ├── App.jsx
+│   └── App.css
+├── README.md
+├── package.json
+└── vite.config.js
 
 ## Core Components
 
@@ -99,10 +101,33 @@ fire-rescue-resource-allocator/
 - Professional styling
 
 ## Installation
-1. Clone the repository
-2. Install dependencies:
-bash
-npm install
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/pemtseringgurung/fire-rescue-resource-allocator.git
+   cd fire-rescue-resource-allocator
+   ```
+
+2. **Install dependencies**:
+   Run the following command to install all necessary dependencies, including Leaflet:
+   ```bash
+   npm install
+   ```
+
+   This command will install:
+   - React and React DOM
+   - React Router
+   - Leaflet and React-Leaflet
+   - Other development dependencies like ESLint and Vite
+
+3. **Run the development server**:
+   After the installation is complete, you can start the development server with:
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**:
+   Navigate to `http://localhost:3000` (or the port specified in your terminal) to view the application.
 
 ## Usage
 - Click on the map to add fire incidents
