@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "leaflet": "^1.9.4",
-    "react": "^18.2.0", // Chosen version from frontend_branch
-    "react-dom": "^18.2.0", // Chosen version from frontend_branch
-    "react-leaflet": "^4.2.1", // Keep this version as it is the same in both branches
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
     "react-router-dom": "^7.2.0"
   },
   "devDependencies": {
