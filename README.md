@@ -1,22 +1,43 @@
 # Los Angeles Fire Rescue Resource Allocation System
 
-An interactive emergency response mapping system that helps visualize and manage fire station locations and emergency incidents across Los Angeles.
+## Overview
+An advanced emergency response mapping system designed to help visualize and manage fire station locations and emergency incidents across Los Angeles. This interactive platform assists emergency responders in optimizing resource allocation and response times.
 
-## Features
+## Key Features
+- **Interactive Map Interface**
+  - Real-time fire incident placement
+  - Draggable fire markers with adjustable intensity
+  - Visual representation of fire intensity with circular overlays
+  - Fire station locations with detailed information
+  - Grid overlay for precise location reference
 
-- Interactive map showing all LA fire stations with detailed information
-- Ability to add and manage emergency fire incidents
-- Draggable fire markers with adjustable sizes
-- Grid overlay for precise location reference
-- Real-time coordinate display
-- Professional emergency services UI theme
+- **Resource Management**
+  - Dynamic resource allocation from fire stations
+  - Resource tracking (firefighters, water, firetrucks)
+  - Visual connection lines between stations and assigned fires
+  - Automated resource optimization algorithm
+  - Real-time resource availability tracking
+
+- **Fire Intensity System**
+  - Scale of 1-10 with detailed descriptions
+  - Visual intensity indicators
+  - Real-time intensity adjustments
+  - Comprehensive intensity rubric
+  - Circular overlays showing affected areas
+
+- **User Interface**
+  - Modern emergency services theme
+  - Professional header and navigation
+  - Informative popups for both fires and stations
+  - Clean, intuitive controls
+  - About page with team information
 
 ## Technical Stack
-
 - React 19
+- React Router for navigation
 - Leaflet/React-Leaflet for mapping
 - Vite for build tooling
-- ESLint for code quality
+- CSS Modules for styling
 
 ## Project Structure
 
@@ -24,109 +45,148 @@ fire-rescue-resource-allocator/
 ├── src/
 │ ├── assets/
 │ │ ├── images/
-│ │ │ ├── firestation.png # Fire station icon
-│ │ │ └── fire.png # Emergency fire icon
-│ │ └── fireStations.json # LA fire stations data
+│ │ │ ├── firestation.png
+│ │ │ ├── fire.png
+│ │ │ └── team/
+│ │ │ ├── pem.png
+│ │ │ ├── saidamir.png
+│ │ │ ├── suraj.png
+│ │ │ └── yajas.png
+│ │ └── fireStations.json
 │ ├── components/
-│ │ └── Map.jsx # Main map component
-│ ├── App.jsx # Root component
-│ ├── App.css # Main styling
-│ └── index.css # Global styles + grid overlay
-├── package.json
+│ │ ├── Map.jsx
+│ │ ├── Header.jsx
+│ │ └── About.jsx
+│ ├── utils/
+│ │ └── resourceOptimizer.js
+│ ├── styling/
+│ │ ├── Map.css
+│ │ ├── About.css
+│ │ └── Header.css
+│ ├── App.jsx
+│ └── App.css
 └── README.md
 
-## Key Features Implementation
+## Core Components
 
 ### Map Component (Map.jsx)
-- Displays base map using OpenStreetMap
-- Renders fire stations from JSON data
-- Implements click-to-add fire incidents
-- Provides size control for fire markers
-- Supports marker dragging
+- Main interactive map interface
+- Handles fire incident placement and management
+- Manages resource allocation visualization
+- Implements intensity circle overlays
+- Controls marker dragging and popup interactions
 
-### Styling (App.css)
-- Professional emergency services theme
-- Gradient header with emergency colors
-- Fixed positioning for reliable layout
-- Responsive design considerations
+### Resource Optimizer (resourceOptimizer.js)
+- Implements intelligent resource allocation algorithm
+- Considers:
+  - Fire intensity levels
+  - Station proximity
+  - Available resources
+  - Current allocations
+- Provides optimal resource distribution suggestions
+- Prevents resource overallocation
 
-### Grid Overlay (index.css)
-- 50px grid pattern for reference
-- Semi-transparent overlay
-- Non-interfering with map interactions
+### About Component (About.jsx)
+- Team information display
+- Project description
+- Implementation details
+- Navigation controls
+
+### Header Component (Header.jsx)
+- Application title
+- Navigation menu
+- Subtitle display
+- Professional styling
 
 ## Installation
-
 1. Clone the repository
 2. Install dependencies:
-- bash
-- npm install
-
+bash
+npm install
 
 ## Usage
-
-- Click anywhere on the map to add a fire incident
-- Click on a fire marker to adjust its size using the slider
+- Click on the map to add fire incidents
+- Adjust fire intensity using the slider (1-10 scale)
+- Click on fire stations to view and manage resources
 - Drag markers to update locations
-- Click on fire stations to view details
+- Use the optimization button to get resource allocation suggestions
+- View the About page for team information
 
-## Development
-
-The project uses Vite for fast development and building. Available commands:
+## Development Commands
 bash
 npm run dev # Start development server
 npm run build # Build for production
 npm run preview # Preview production build
-npm run lint # Run ESLint
 
+## Features Implementation Details
 
-## Dependencies
+### Map Component
+The main map component (Map.jsx) handles:
+- Fire station rendering
+- Fire incident management
+- Resource allocation tracking
+- Intensity visualization
 
-- react ^19.0.0
-- react-dom ^19.0.0
-- leaflet ^1.9.4
-- react-leaflet ^4.2.1
+### Resource Management
+- Each fire station has predefined resources
+- Resources can be allocated to multiple fires
+- Visual feedback through connecting lines
+- Real-time resource tracking
 
-## Dev Dependencies
+### Fire Intensity Scale
+1. Very Low (0.1-1): Small fires, <1 acre
+2. Low (1-2): Contained fires, 1-5 acres
+3. Moderate (2-3): Spreading fires, 5-10 acres
+4. Significant (3-4): Rapid spread, 10-20 acres
+5. High (4-5): Large fires, 20-50 acres
+6. Very High (5-6): Major events, 50-100 acres
+7. Severe (6-7): Extensive fires, 100-200 acres
+8. Critical (7-8): Catastrophic, >200 acres
+9. Extreme (8-9): Uncontrolled, thousands of acres
+10. Catastrophic (9-10): Widespread devastation
 
-- vite ^6.1.0
-- eslint ^9.19.0
-- @vitejs/plugin-react ^4.3.4
-- Various ESLint plugins and configurations
+## Resource Management
+Each fire station manages:
+- Firefighters (personnel count)
+- Water (gallons)
+- Firetrucks (vehicle count)
 
-## Future Enhancements
+Resources can be:
+- Allocated to multiple fires
+- Tracked in real-time
+- Optimized automatically
+- Visualized through connection lines
 
-- Add real-time data integration
-- Implement resource allocation algorithms
-- Add response time analysis
-- Include more emergency service features
-- Add data persistence
-- Enhance marker customization options
+## Styling
+The application uses a professional emergency services theme:
+- Red and black color scheme
+- Modern typography
+- Responsive design
+- Clear visual hierarchy
+- Professional animations
+- Intuitive controls
 
 ## Contributing
-
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## Team
+- Pem Gurung
+- Saidamir
+- Suraj
+- Yajas
+
 ## License
+MIT License - See LICENSE file for details
 
-MIT License
+## Future Enhancements
+- Real-time data integration
+- Advanced resource allocation algorithms
+- Response time analysis
+- Enhanced marker customization
+- Data persistence
+- Mobile responsiveness improvements
+- Weather integration
+- Historical data analysis
+- Multi-agency coordination
+- Advanced reporting features
 
-Copyright (c) 2024 [Pem Gurung]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.

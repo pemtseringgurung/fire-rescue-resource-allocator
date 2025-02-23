@@ -1,0 +1,82 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #d32f2f;
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  
+  .subtitle {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin: 5px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    transition: none;
+  }
+  
+  .nav-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+  
+  .about-button {
+    padding: 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    height: auto;
+    width: 120px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .about-button:hover {
+    color: #a29393;
+  }
+  
+  .about-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .home-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-link:hover {
+    background-color: #0056b3;
+  }

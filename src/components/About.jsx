@@ -1,194 +1,62 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// Import your team member images
-import pemImage from '../assets/images/team/pem.png';  // Add your actual image paths
+import pemImage from '../assets/images/team/pem.png';
 import saidamirImage from '../assets/images/team/saidamir.png';
 import surajImage from '../assets/images/team/suraj.png';
-import yajasImage from '../assets/images/team/yajas.png';  // Updated image name
+import yajasImage from '../assets/images/team/yajas.png';
+import '../styling/About.css';
 
 const About = () => {
   return (
-    <div style={{
-      height: '100vh',
-      color: 'white',
-      backgroundColor: '#1a1a1a',
-      display: 'flex',
-      flexDirection: 'column',
-      padding: '20px',
-      position: 'relative',
-      overflow: 'hidden'  // Prevents scrollbar
-    }}>
+    <div className="about-container">
       <Link 
         to="/" 
-        style={{
-          position: 'absolute',
-          top: '20px',
-          right: '20px',
-          padding: '12px 24px',
-          backgroundColor: '#ff3333',
-          color: 'white',
-          textDecoration: 'none',
-          borderRadius: '5px',
-          fontSize: '20px',
-          zIndex: 1000
-        }}
+        className="return-link"
       >
         Return to Map
       </Link>
 
-      <div style={{
-        backgroundColor: '#1a1a1a',
-        maxWidth: '1400px',
-        margin: '0 auto',
-        width: '100%',
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between'
-      }}>
-        <div>
-          <h1 style={{ 
-            color: '#ff3333', 
-            marginBottom: '30px',  // Increased margin
-            fontSize: '36px',
-            marginTop: '20px'  // Added top margin
-          }}>About This Project</h1>
+      <div className="about-content">
+        <div className="about-header">
+          <h1 className="about-title">About This Project</h1>
+          <p className="about-description">
+            The Los Angeles Fire Rescue Resource Allocator is designed to enhance emergency response planning. This platform provides a comprehensive view of fire station locations, allowing emergency responders to optimize resource allocation effectively. By visualizing coverage areas and response capabilities, we aim to improve the efficiency of emergency services across Los Angeles.
+          </p>
+          <p className="about-description">
+            Our interactive mapping system allows users to simulate emergency scenarios, place markers on the map, and adjust severity indicators. This real-time decision-making tool is crucial for effective resource management during critical situations, ultimately leading to faster response times and better service for the community.
+          </p>
         </div>
-        
-        <section style={{ marginBottom: '40px' }}>  
-          <p style={{ 
-            fontSize: '20px',
-            maxWidth: '1200px',
-            margin: '0 auto 25px'  // Increased margin
-          }}>
-            Welcome to the Los Angeles Fire Rescue Resource Allocator, an innovative solution 
-            designed to revolutionize emergency response planning in Los Angeles. Our platform 
-            provides emergency responders and planners with a powerful tool to visualize and 
-            optimize resource allocation across the city's diverse neighborhoods.
-          </p>
-          <p style={{ 
-            fontSize: '20px',
-            maxWidth: '1200px',
-            margin: '0 auto 25px'  // Increased margin
-          }}>
-            This interactive mapping system displays all 106 fire stations across Los Angeles,
-            allowing emergency planners to better understand coverage areas and response capabilities.
-            Users can simulate emergency scenarios by placing markers on the map, with adjustable
-            severity indicators to represent different types of incidents. The platform enables
-            real-time decision making and resource management during critical situations.
-          </p>
-          <p style={{ 
-            fontSize: '20px',
-            maxWidth: '1200px',
-            margin: '0 auto 25px'  // Increased margin
-          }}>
-            The system's real-time visualization capabilities help identify potential gaps in coverage
-            and optimize resource deployment, ultimately leading to faster response times and better
-            emergency service for Los Angeles residents. By leveraging modern mapping technology
-            and intuitive user interfaces, we aim to enhance the efficiency of emergency response
-            operations throughout the city.
-          </p>
-        </section>
 
-        <section style={{ flex: 1 }}>
-          <h2 style={{ fontSize: '30px', marginBottom: '40px' }}>Meet the Team</h2>  
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(4, 1fr)', 
-            gap: '50px',  // Increased gap
-            padding: '0 60px'  // Increased padding
-          }}>
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ 
-                width: '150px', 
-                height: '150px', 
-                margin: '0 auto 25px',
-                borderRadius: '75px',
-                overflow: 'hidden'  // This ensures the image stays within the circle
-              }}>
-                <img 
-                  src={pemImage} 
-                  alt="Pem Gurung"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover'  // This ensures the image covers the circle nicely
-                  }}
-                />
-              </div>
-              <h3 style={{ margin: '15px 0', fontSize: '24px' }}>Pem Gurung</h3>
-              <p style={{ margin: '10px 0', fontSize: '20px' }}>Major: Computer Science</p>
-              <p style={{ margin: '10px 0', fontSize: '20px' }}>Year: Junior</p>
-              <p style={{ margin: '10px 0', fontSize: '18px' }}>Email: pgurung26@wooster.edu</p>
+        <section className="team-section">
+          <h2 className="team-title">Meet the Team</h2>
+          <div className="team-container">
+            <div className="team-member">
+              <img src={pemImage} alt="Pem Gurung" className="team-image" />
+              <h3>Pem Gurung</h3>
+              <p>Year: Junior</p>
+              <p>Major: Computer Science</p>
+              <p>pem@example.com</p>
             </div>
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ 
-                width: '150px', 
-                height: '150px', 
-                margin: '0 auto 25px',
-                borderRadius: '75px',
-                overflow: 'hidden'
-              }}>
-                <img 
-                  src={saidamirImage} 
-                  alt="Saidamir Osimov"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover'
-                  }}
-                />
-              </div>
-              <h3 style={{ margin: '15px 0', fontSize: '24px' }}>Saidamir Osimov</h3>
-              <p style={{ margin: '10px 0', fontSize: '20px' }}>Major: Computer Science</p>
-              <p style={{ margin: '10px 0', fontSize: '20px' }}>Year: Sophomore</p>
-              <p style={{ margin: '10px 0', fontSize: '18px' }}>Email: sosimov27@wooster.edu</p>
+            <div className="team-member">
+              <img src={saidamirImage} alt="Saidamir Osimov" className="team-image" />
+              <h3>Saidamir Osimov</h3>
+              <p>Year: Sophomore</p>
+              <p>Major: Computer Science</p>
+              <p>saidamir@example.com</p>
             </div>
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ 
-                width: '150px', 
-                height: '150px', 
-                margin: '0 auto 25px',
-                borderRadius: '75px',
-                overflow: 'hidden'
-              }}>
-                <img 
-                  src={surajImage} 
-                  alt="Suraj Acharya"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover'
-                  }}
-                />
-              </div>
-              <h3 style={{ margin: '15px 0', fontSize: '24px' }}>Suraj Acharya</h3>
-              <p style={{ margin: '10px 0', fontSize: '20px' }}>Double Major: Computer Science and Mathematics</p>
-              <p style={{ margin: '10px 0', fontSize: '20px' }}>Year: Sophomore</p>
-              <p style={{ margin: '10px 0', fontSize: '18px' }}>Email: sacharya27@wooster.edu</p>
+            <div className="team-member">
+              <img src={surajImage} alt="Suraj Acharya" className="team-image" />
+              <h3>Suraj Acharya</h3>
+              <p>Year: Sophomore</p>
+              <p>Major: Computer Science and Mathematics</p>
+              <p>suraj@example.com</p>
             </div>
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ 
-                width: '150px', 
-                height: '150px', 
-                margin: '0 auto 25px',
-                borderRadius: '75px',
-                overflow: 'hidden'
-              }}>
-                <img 
-                  src={yajasImage} 
-                  alt="Yajas Kandel"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover'
-                  }}
-                />
-              </div>
-              <h3 style={{ margin: '15px 0', fontSize: '24px' }}>Yajas Kandel</h3>
-              <p style={{ margin: '10px 0', fontSize: '20px' }}>Major: Computer Science</p>
-              <p style={{ margin: '10px 0', fontSize: '20px' }}>Year: Sophomore</p>
-              <p style={{ margin: '10px 0', fontSize: '18px' }}>Email: ykandel27@wooster.edu</p>
+            <div className="team-member">
+              <img src={yajasImage} alt="Yajas Kandel" className="team-image" />
+              <h3>Yajas Kandel</h3>
+              <p>Year: Sophomore</p>
+              <p>Major: Computer Science</p>
+              <p>yajas@example.com</p>
             </div>
           </div>
         </section>
