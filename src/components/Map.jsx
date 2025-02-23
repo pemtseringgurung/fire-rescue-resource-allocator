@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents, Polyline, Circle, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import "./Map.css";
+import "../styling/Map.css";
 import L from 'leaflet';
 import fireStations from '../assets/fireStations.json';
 import firestation from "../assets/images/firestation.png";
@@ -19,6 +19,13 @@ const stationIcon = L.icon({
 const LA_Map = () => {
   const [dispatchedResources, setDispatchedResources] = useState({});
   const [fires, setFires] = useState([]);
+  const [intensityDescriptions, setIntensityDescriptions] = useState(Array(10).fill(""));
+  const [activePopup, setActivePopup] = useState(null);
+
+  const californiaBounds = [
+    [42.0095, -114.8489], // Northeast corner
+    [32.5343, -124.4096]  // Southwest corner
+  ];
 
   const handleResourceDispatch = (stationId, fireId, resources) => {
     setDispatchedResources(prev => ({
@@ -51,20 +58,17 @@ const LA_Map = () => {
     shadowUrl: null
   });
 
-  const updateFireIntensity = (fireId, intensity) => {
-    setFires(current => 
-      current.map(fire => 
-        fire.id === fireId 
-          ? { ...fire, intensity: parseFloat(intensity) }
-          : fire
+  const updateFireIntensity = (fireId, value) => {
+    setFires((prevFires) => 
+      prevFires.map(fire => 
+        fire.id === fireId ? { ...fire, intensity: parseFloat(value) } : fire
       )
     );
   };
 
-  // Component to maintain circle size across zoom levels
   const IntensityCircle = ({ fire }) => {
     const map = useMap();
-    const radius = (fire.intensity || 1) * 500; // Base radius in meters
+    const radius = (fire.intensity || 1) * 500; 
 
     return (
       <Circle
@@ -93,6 +97,19 @@ const LA_Map = () => {
     });
   };
 
+  const handleDeleteFire = (fireId, e) => {
+    e.stopPropagation();
+    removeFire(fireId);
+    if (activePopup === fireId) {
+      setActivePopup(null);
+    }
+  };
+
+  const handleBack = (e) => {
+    e.stopPropagation();
+    setActivePopup(null);
+  };
+
   const AddMarkerWithTracking = () => {
     useMapEvents({
       click(e) {
@@ -103,6 +120,7 @@ const LA_Map = () => {
           intensity: 1.0
         };
         setFires(current => [...current, newFire]);
+        setActivePopup(newFire.id);
       }
     });
 
@@ -115,20 +133,36 @@ const LA_Map = () => {
               position={fire.position}
               icon={getFireIcon(fire.size)}
               draggable={true}
+              eventHandlers={{
+                click: (e) => {
+                  e.originalEvent.stopPropagation();
+                  setActivePopup(fire.id);
+                },
+              }}
             >
-              <Popup>
-                <div>
+              <Popup 
+                closeButton={false} 
+                open={activePopup === fire.id}
+              >
+                <div className="popup-header">
+                  <button 
+                    className="back-button" 
+                    onClick={handleBack}
+                    style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.5rem', lineHeight: '1' }}
+                  >
+                    ←
+                  </button>
+                  <span 
+                    className="delete-icon" 
+                    onClick={(e) => handleDeleteFire(fire.id, e)}
+                    style={{ color: 'red', cursor: 'pointer', marginLeft: '10px', fontSize: '1.5rem', lineHeight: '1' }}
+                  >
+                    ✖
+                  </span>
+                </div>
+                <div className="intensity-scale">
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <span>Fire #{fire.id}</span>
-                    <button 
-                      onClick={(e) => {
-                        e.stopPropagation();  // Stop event from reaching the map
-                        removeFire(fire.id);
-                      }}
-                      className="remove-fire-btn"
-                    >
-                      ✕
-                    </button>
                   </div>
                   <div>{fire.position[0].toFixed(4)}, {fire.position[1].toFixed(4)}</div>
                   <div className="intensity-slider">
@@ -140,6 +174,7 @@ const LA_Map = () => {
                       step="0.1"
                       value={fire.intensity || 1}
                       onChange={(e) => updateFireIntensity(fire.id, e.target.value)}
+                      style={{ cursor: 'pointer' }}
                     />
                     <span>{(fire.intensity || 1).toFixed(1)}</span>
                   </div>
@@ -160,7 +195,7 @@ const LA_Map = () => {
                       e.target.setStyle({ weight: 8 });
                     },
                     mouseout: (e) => {
-                      e.target.setStyle({ weight: 2 });
+                      e.target.setStyle({ weight: 4 });
                     }
                   }}
                   pathOptions={{
@@ -205,33 +240,44 @@ const LA_Map = () => {
     setDispatchedResources(optimizedAllocation);
   };
 
+  const handleInputChange = (index, value) => {
+    const newDescriptions = [...intensityDescriptions];
+    newDescriptions[index] = value;
+    setIntensityDescriptions(newDescriptions);
+  };
+
   return (
-    <>
-      <button 
-        onClick={handleOptimizeResources}
-        style={{
-          position: 'absolute',
-          top: '20px',
-          right: '20px',
-          zIndex: 1000,
-          padding: '10px 20px',
-          backgroundColor: '#d32f2f',
-          color: 'white',
-          border: 'none',
-          borderRadius: '4px',
-          cursor: 'pointer'
-        }}
-      >
-        Optimize Resources
-      </button>
+    <div className="map-container">
+      <div className="info-box">
+        <h4 className="info-title">Fire Intensity Rubric</h4>
+        <ul className="intensity-list">
+          <li className="intensity-item"><strong>0.1-1</strong>: Very Low Intensity - Small fire; minimal impact; less than 1 acre affected.</li>
+          <li className="intensity-item"><strong>1-2</strong>: Low Intensity - Small, contained fire; 1 to 5 acres affected.</li>
+          <li className="intensity-item"><strong>2-3</strong>: Moderate Intensity - Fire spreading; 5 to 10 acres affected.</li>
+          <li className="intensity-item"><strong>3-4</strong>: Significant Intensity - Fire is spreading rapidly; 10 to 20 acres affected.</li>
+          <li className="intensity-item"><strong>4-5</strong>: High Intensity - Large fire; 20 to 50 acres affected.</li>
+          <li className="intensity-item"><strong>5-6</strong>: Very High Intensity - Major fire event; 50 to 100 acres affected.</li>
+          <li className="intensity-item"><strong>6-7</strong>: Severe Intensity - Extensive fire; 100 to 200 acres affected.</li>
+          <li className="intensity-item"><strong>7-8</strong>: Critical Intensity - Catastrophic fire; over 200 acres affected.</li>
+          <li className="intensity-item"><strong>8-9</strong>: Extreme Intensity - Uncontrolled fire; thousands of acres affected.</li>
+          <li className="intensity-item"><strong>9-10</strong>: Catastrophic Event - Widespread devastation; thousands of acres affected.</li>
+        </ul>
+      </div>
+
       <MapContainer
-        center={[34.0522, -118.2437]}
-        zoom={11}
+        center={[34.0522, -118.2437]} // Center on Los Angeles
+        zoom={11} // Initial zoom level for Los Angeles
         scrollWheelZoom={true}
         style={{
-          height: "100vh",
+          height: "calc(100% - 160px)",
           width: "100%",
         }}
+        bounds={californiaBounds}
+        maxBounds={californiaBounds}
+        maxBoundsVisibilty={true}
+        minZoom={6}
+        maxZoom={15}
+        zoomControl={false}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -266,7 +312,7 @@ const LA_Map = () => {
                         />
                       </div>
                       <div>
-                        <label>Water (gallons): </label>
+                        <label>Water:</label>
                         <input 
                           type="number"
                           min="0"
@@ -278,7 +324,7 @@ const LA_Map = () => {
                         />
                       </div>
                       <div>
-                        <label>Firetrucks: </label>
+                        <label>Firetrucks:</label>
                         <input 
                           type="number"
                           min="0"
@@ -298,7 +344,13 @@ const LA_Map = () => {
         ))}
         <AddMarkerWithTracking />
       </MapContainer>
-    </>
+      <button 
+        onClick={handleOptimizeResources}
+        className="optimize-button"
+      >
+        Optimize Resources
+      </button>
+    </div>
   );
 };
 
