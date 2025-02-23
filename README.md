@@ -3,6 +3,8 @@
 ## Overview
 An advanced emergency response mapping system designed to help visualize and manage fire station locations and emergency incidents across Los Angeles. This interactive platform assists emergency responders in optimizing resource allocation and response times.
 
+![Screenshot of the Application](src/assets/images/screenshot.png) <!-- Update the path to your screenshot -->
+
 ## Key Features
 - **Interactive Map Interface**
   - Real-time fire incident placement
