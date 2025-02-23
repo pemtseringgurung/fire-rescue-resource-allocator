@@ -35,28 +35,28 @@ const About = () => {
               <h3>Pem Gurung</h3>
               <p>Year: Junior</p>
               <p>Major: Computer Science</p>
-              <p>pem@example.com</p>
+              <p>pgurung26@wooster.edu</p>
             </div>
             <div className="team-member">
               <img src={saidamirImage} alt="Saidamir Osimov" className="team-image" />
               <h3>Saidamir Osimov</h3>
               <p>Year: Sophomore</p>
               <p>Major: Computer Science</p>
-              <p>saidamir@example.com</p>
+              <p>sosimov27@wooster.edu</p>
             </div>
             <div className="team-member">
               <img src={surajImage} alt="Suraj Acharya" className="team-image" />
               <h3>Suraj Acharya</h3>
               <p>Year: Sophomore</p>
               <p>Major: Computer Science and Mathematics</p>
-              <p>suraj@example.com</p>
+              <p>sacharya27@wooster.edu</p>
             </div>
             <div className="team-member">
               <img src={yajasImage} alt="Yajas Kandel" className="team-image" />
               <h3>Yajas Kandel</h3>
               <p>Year: Sophomore</p>
               <p>Major: Computer Science</p>
-              <p>yajas@example.com</p>
+              <p>ykandel27@wooster.edu</p>
             </div>
           </div>
         </section>
